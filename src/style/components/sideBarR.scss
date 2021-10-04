@@ -1,0 +1,144 @@
+.sideBR__searchRow
+{
+    height: 15%;
+}
+
+
+.sideBR__searchInput
+{
+    width: 40%;
+    height: 48px;
+    border-radius: 78px 78px 78px 78px;
+    -moz-border-radius: 78px 78px 78px 78px;
+    -webkit-border-radius: 78px 78px 78px 78px;
+    border: 1px solid $secondary;
+    padding: 5px;
+
+    &:focus
+    {
+       
+        border-color: $primary;
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px $primary;
+        outline: 0 none;
+      
+    }
+
+  
+}
+
+
+.sideBr__btns
+{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    color : $secondary;
+    background-color: transparent;
+    border : 1px solid $secondary;
+    margin-left: 20px;
+
+}
+
+
+.sideBr__btns2
+{
+    background-color: #58B9FF !important;
+    color: white !important;
+}
+
+
+.sideBR__rowSuggestion
+{
+    padding-left: 30px;   
+}
+
+
+.sideBR__btnFollow
+{
+    transition: all 0.3s ease-in-out;
+    background-color: $primary;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 150px !important;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    font-size: 0.8rem !important;
+
+    &:hover
+    {
+        border : 1px solid $secondary;
+        background-color: transparent !important;
+        color: black !important;
+    }
+
+}
+
+
+.sideBR__btnFollowed
+{
+    background-color: transparent !important;
+    color: black !important;
+    border: 1px solid $secondary !important;
+
+    &:hover
+    {
+        border : none;
+        background-color: $primary !important;
+        color: white !important;
+    }
+
+}
+
+
+.sideBR__rowLastPost
+{
+    padding-left: 30px;   
+}
+
+
+.sideBR__latestContainer
+{
+    width: 99%;
+    height: 200px;
+    background-color: $tertiary;
+    border: 2px solid white;
+
+    img
+    {
+        height: 100px;
+        border: 2px solid white;
+    }
+}
+
+
+.sideBR__latestPostImg
+{
+    width : 200px;
+    margin-left: 30px;
+
+}
+
+
+.sideBR__aboutMenu
+{
+
+    li
+    {
+       transition: all 0.3s ease-in-out;
+       list-style-type : none; 
+       margin-left: 10px;
+       color : $secondary;
+       font-size: 0.7rem;
+       font-weight: bold;
+       margin-top: 35%;
+
+       &:hover
+       {
+           color: $primary;
+       }
+    }
+    
+}

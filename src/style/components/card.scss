@@ -1,0 +1,15 @@
+.card
+{
+    width: 95% !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+
+.card-body small
+{
+    color: $secondary;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0 !important;
+}
