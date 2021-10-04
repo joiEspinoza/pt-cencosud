@@ -22,7 +22,8 @@ const Menu = () =>
 
             <ul className="sideBL__ul mt-3">
                 
-                { urls.map( ( url, i ) => 
+                { 
+                    urls.map( ( url, i ) => 
                     
                     <li key={i} className="base__pointer">
                     

@@ -26,7 +26,6 @@
   
 }
 
-
 .sideBr__btns
 {
     border-radius: 50%;
@@ -48,13 +47,29 @@
 }
 
 
+
 .sideBR__rowSuggestion
 {
     padding-left: 30px;   
 }
 
 
-.sideBR__btnFollow
+.sideBR__SC_Img
+{
+    border-radius: 50%;
+    width: 100%;
+    margin: 10px;
+}
+
+
+.sideBR__SC_Title
+{
+    margin: 0;
+    margin-top: 15px !important;
+}
+
+
+.sideBR__SC_btnFollow
 {
     transition: all 0.3s ease-in-out;
     background-color: $primary;
@@ -77,7 +92,7 @@
 }
 
 
-.sideBR__btnFollowed
+.sideBR__SC_btnFollowed
 {
     background-color: transparent !important;
     color: black !important;
@@ -91,6 +106,7 @@
     }
 
 }
+
 
 
 .sideBR__rowLastPost

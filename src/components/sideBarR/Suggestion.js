@@ -1,4 +1,5 @@
-import Card from "./Card"
+import CardSugg from "./CardSugg"
+
 
 const Suggestion = () => 
 {
@@ -32,25 +33,18 @@ const Suggestion = () =>
             
             <div className="col-md-12">
 
-                <div className="row base__flexRow base__minTitle base__centerElements">
-
-                    <div className="col-md-6">
-
-                        <p>Suggestion for you</p>
-
-                    </div>
-
-                    <div className="col-md-6">
-
-                        <p className="color__textPrimary base__pointer" style={{ marginLeft : "50%" }}>See All</p>
-
-                    </div>
+                
+                <div className="base__flexRow" style={{ justifyContent : "space-between" }}>
+                
+                    <p className="base__minTitle">Suggestion for you</p>
+                    <p className="base__minTitle color__textPrimary base__pointer">See All</p>
 
                 </div>
+               
 
                 <div className="row">
 
-                  <Card suggestions={ suggestions } />
+                  <CardSugg suggestions={ suggestions } />
                 
                 </div>
 

@@ -4,45 +4,49 @@ import { useState } from "react"
 const Account = () => 
 {
 
-    const [hidden, setHidde] = useState(true)
+    const [hidden, setHidde] = useState(true);
     
     
     return (
        
         <div className="row sideBl__accountRow mt-3">
-            
-            <p className="base__minTitle base__pointer" onClick={ () => setHidde(!hidden) }>Account&nbsp;&nbsp;&nbsp;&nbsp;<i className={ hidden ? "fas fa-chevron-down" : "fas fa-chevron-up" }></i></p>
-            
-            {
-                !hidden &&
-
-                <div className="card base__borderNone base__pointer animate__animated animate__fadeIn">
+            <div className="col-md-12">
                 
-                    <div className="row no-gutters">
-                   
-                        <div className="col-sm-3 base__centerElements">
-                            
-                            <img src="https://res.cloudinary.com/djlmqpd2n/image/upload/v1633218146/testCencosud%20/perfilImg_k6bx3h.png" width="150%" alt="user"/>
-                        
-                        </div>
+                <p className="base__minTitle base__pointer" style={{ marginLeft : "37px" }} onClick={ () => setHidde(!hidden) }>Account<i style={{ marginLeft : "80px" }} className={ hidden ? "fas fa-chevron-down" : "fas fa-chevron-up" }></i></p>
+            
+                {
+                    !hidden ?
+
+                    <div className="card base__borderNone base__pointer animate__animated animate__fadeIn">
                     
-                        <div className="col-sm-9">
-                        
-                            <div className="card-body">
+                        <div className="row no-gutters">
+                    
+                            <div className="col-sm-4">
                                 
-                                <p className="card-title base__minTitle" style={{ margin : 0 }}>Michael</p>
-                                <small className="card-text">@michaelsco..</small>
+                                <img className="sideBl__Cardimg" src="https://res.cloudinary.com/djlmqpd2n/image/upload/v1633218146/testCencosud%20/perfilImg_k6bx3h.png" alt="user"/>
                             
                             </div>
                         
+                            <div className="col-sm-8">
+                            
+                                <div className="card-body card-body-noPadding">
+                                    
+                                    <p className="base__minTitle sideBl__CardTitle">Michael</p>
+                                    <p className="base__minSubTitle">@michaelsco..</p>
+                                
+                                </div>
+                            
+                            </div>
+                    
                         </div>
                 
                     </div>
+                    :
+                    <div className="card base__borderNone"></div>
+                }
+
+            </div>
             
-                </div>
-        
-            }
-           
         </div>
     )
 }

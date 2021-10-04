@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Card = ({ suggestions }) => 
+const CardSugg = ({ suggestions }) => 
 {
 
     return (
@@ -17,19 +17,18 @@ const Card = ({ suggestions }) =>
 
                             <div className="row no-gutters">
                         
-                                <div className="col-sm-2 base__centerElements">
+                                <div className="col-sm-3">
                                     
-                                    <img src={s.avatrImg} style={{ borderRadius : "50%", width : "180%" }} alt={s.url}/>
+                                    <img src={ s.avatrImg } className="sideBR__SC_Img" alt={ s.url }/>
                                 
                                 </div>
                             
-                                <div className="col-sm-6">
+                                <div className="col-sm-5">
                                 
-                                    <div className="card-body">
+                                    <div className="card-body card-body-noPadding">
 
-
-                                        <p className="card-title base__minTitle" style={{ margin : 0, fontSize : "0.8rem" }}>{s.name}</p>
-                                        <small className="card-text">{s.url}</small>
+                                        <p className="base__minTitle sideBR__SC_Title">{s.name}</p>
+                                        <p className="base__minSubTitle">{s.url}</p>
                                     
                                     </div>
                                 
@@ -40,9 +39,9 @@ const Card = ({ suggestions }) =>
                                     { 
                                         s.followed ?
                                         
-                                        <button className="sideBR__btnFollow sideBR__btnFollowed base__minTitle">Followed</button>
+                                        <button className="sideBR__SC_btnFollow sideBR__btnFollowed base__minTitle">Followed</button>
                                         :
-                                        <button className="sideBR__btnFollow base__minTitle">Follow</button>
+                                        <button className="sideBR__SC_btnFollow base__minTitle">Follow</button>
 
                                     }
 
@@ -64,4 +63,4 @@ const Card = ({ suggestions }) =>
     )
 }
 
-export default Card
+export default CardSugg
