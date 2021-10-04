@@ -39,7 +39,7 @@ const CardSugg = ({ suggestions }) =>
                                     { 
                                         s.followed ?
                                         
-                                        <button className="sideBR__SC_btnFollow sideBR__btnFollowed base__minTitle">Followed</button>
+                                        <button className="sideBR__SC_btnFollow sideBR__SC_btnFollowed base__minTitle">Followed</button>
                                         :
                                         <button className="sideBR__SC_btnFollow base__minTitle">Follow</button>
 
