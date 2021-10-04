@@ -44,14 +44,14 @@ const Post = ({ following }) =>
                             <span className="mt-3 base__flexRow" style={{ width : "65%" }}>
                                
                                 <img className="center__postMiniAvatar" src={ f.perfilUrl } alt={ f.name } />
-                                <p className="base__minTitle mt-1" style={{ marginLeft : "10px" }}>{`${f.name} ${f.lastName}`}</p>
+                                <p className="base__minTitle mt-1 center__postFont_res" style={{ marginLeft : "10px" }}>{`${f.name} ${f.lastName}`}</p>
                             
                             </span>
                             
                             <span className="mt-3 base__flexRow color__textSecondary" style={{ width : "35%" }}>
                                 
-                                <p className="base__minTitle mt-1" style={{ color : f.lastestPost.map( (el) => el.liked && "red" ) }}><i className="fas fa-heart base__pointer center__heart"></i>&nbsp;&nbsp;{ f.lastestPost.map( (el) => el.likes ) }</p>
-                                <p className="base__minTitle mt-1" style={{ marginLeft : "10px" }}><i className="fas fa-comment-dots base__pointer"></i>&nbsp;&nbsp;{ f.lastestPost.map( (el) => el.comments ) }</p>
+                                <p className="base__minTitle mt-1 center__postFont_res" style={{ color : f.lastestPost.map( (el) => el.liked && "red" ) }}><i className="fas fa-heart base__pointer center__heart"></i>&nbsp;&nbsp;{ f.lastestPost.map( (el) => el.likes ) }</p>
+                                <p className="base__minTitle mt-1 center__postFont_res" style={{ marginLeft : "10px" }}><i className="fas fa-comment-dots base__pointer"></i>&nbsp;&nbsp;{ f.lastestPost.map( (el) => el.comments ) }</p>
                             
                             </span>
                             

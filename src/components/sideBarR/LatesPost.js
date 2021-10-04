@@ -4,7 +4,7 @@ const LatesPost = () =>
 {
     return (
         
-        <div className="row sideBR__rowLastPost mt-4">
+        <div className="row sideBR__rowLastPost mt-4 sideBr__hidden">
             
             <div className="col-md-12">
 
@@ -26,9 +26,9 @@ const LatesPost = () =>
                             
                             <span className="base__flexRow color__textSecondary" style={{ marginLeft : "25px" }}>
                                 
-                                <p className="base__minTitle mt-1 sideBR__latestFont" style={{ color:"red", fontSize : "0.6rem" }}><i className="fas fa-heart center__heart"></i>&nbsp;27</p>
-                                <p className="base__minTitle mt-1 sideBR__latestFont" style={{ marginLeft : "5px", fontSize : "0.6rem" }}><i className="fas fa-comment-dots"></i>&nbsp;12</p>
-                                <p className="base__minTitle mt-1 sideBR__latestFont" style={{ marginLeft : "5px", fontSize : "0.6rem" }}><i className="fas fa-bookmark"></i>&nbsp;8</p>
+                                <p className="base__minTitle mt-1 sideBR__latestInfo" style={{ color:"red" }}><i className="fas fa-heart center__heart"></i>&nbsp;27</p>
+                                <p className="base__minTitle mt-1 sideBR__latestInfo"><i className="fas fa-comment-dots"></i>&nbsp;12</p>
+                                <p className="base__minTitle mt-1 sideBR__latestInfo"><i className="fas fa-bookmark"></i>&nbsp;8</p>
 
                             </span>
                         

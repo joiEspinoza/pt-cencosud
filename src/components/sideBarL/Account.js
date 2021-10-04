@@ -21,13 +21,13 @@ const Account = () =>
                     
                         <div className="row no-gutters">
                     
-                            <div className="col-sm-4">
+                            <div className="col-4">
                                 
                                 <img className="sideBl__Cardimg" src="https://res.cloudinary.com/djlmqpd2n/image/upload/v1633218146/testCencosud%20/perfilImg_k6bx3h.png" alt="user"/>
                             
                             </div>
                         
-                            <div className="col-sm-8">
+                            <div className="col-8">
                             
                                 <div className="card-body card-body-noPadding">
                                     

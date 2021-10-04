@@ -17,13 +17,13 @@ const CardSugg = ({ suggestions }) =>
 
                             <div className="row no-gutters">
                         
-                                <div className="col-sm-3">
+                                <div className="col-3">
                                     
                                     <img src={ s.avatrImg } className="sideBR__SC_Img" alt={ s.url }/>
                                 
                                 </div>
                             
-                                <div className="col-sm-5">
+                                <div className="col-5">
                                 
                                     <div className="card-body card-body-noPadding">
 
@@ -34,7 +34,7 @@ const CardSugg = ({ suggestions }) =>
                                 
                                 </div>
 
-                                <div className="col-sm-4 base__centerElements">
+                                <div className="col-4 base__centerElements">
 
                                     { 
                                         s.followed ?
